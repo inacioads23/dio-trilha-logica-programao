@@ -19,12 +19,9 @@ public class Desafio {
 		} else if (valorSalario > 1100.0) {
 			valorImposto = 0.1f * valorSalario;
 			perc = "10%";
-		} else if (valorSalario > 0) {
+		} else {
 			valorImposto = 0.05f * valorSalario;
 			perc = "5%";
-		}else {
-			valorImposto = 0;
-			perc = "0%";
 		}
 
 		float saida = (valorSalario - valorImposto) + valorBeneficios;
